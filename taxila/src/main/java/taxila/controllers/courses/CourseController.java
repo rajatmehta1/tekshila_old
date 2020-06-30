@@ -1,0 +1,84 @@
+package taxila.controllers.courses;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import taxila.controllers.stripe.ChargeRequest;
+import taxila.dao.CourseRepository;
+import taxila.domain.Course;
+import taxila.domain.TekUser;
+import taxila.domain.enums.Status;
+import taxila.dtos.CourseDto;
+import taxila.dtos.User;
+
+import javax.servlet.http.HttpSession;
+import java.util.Date;
+import java.util.List;
+import java.util.Optional;
+
+
+@Controller
+@RequestMapping(value = "/t/courses")
+public class CourseController {
+
+    @Autowired
+    CourseRepository courseRepository;
+
+    @Value("${STRIPE_PUBLIC_KEY}")
+    private String stripePublicKey;
+
+    @Value("${USER_SESSION_ATTR}")
+    private String session_store_name;
+
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String viewAllCourses(Model model) {
+        List<Course> courses = courseRepository.findAll();
+            model.addAttribute("courses", courses);
+            return "fixed-student-courses";
+    }
+
+    @RequestMapping(value = "/view/{courseID}", method = {RequestMethod.GET,RequestMethod.POST})
+    public String viewCourse(@PathVariable(name = "courseID") int courseID, Model model, HttpSession httpSession) {
+        Course course = courseRepository.findCourseByCourseIdEquals(courseID);
+            System.out.println("\n\n ----------> " + course.getDescription() + "\n\n");
+
+        TekUser tusr = (TekUser) httpSession.getAttribute(session_store_name);
+
+            model.addAttribute("course",course);
+            model.addAttribute("login_url_with_courseid","/t/user/login?cid=" + courseID);
+            model.addAttribute("amount", 1 * 100); // in cents
+            model.addAttribute("stripePublicKey", stripePublicKey);
+            model.addAttribute("currency", ChargeRequest.Currency.USD);
+            if(null == tusr) {
+                model.addAttribute("logged_in","n");
+            } else {
+                model.addAttribute("logged_in","y");
+            }
+                return "course_detail";
+    }
+
+
+    @RequestMapping(value = "/view/create", method = RequestMethod.GET)
+    public String viewCreateCourse(CourseDto courseDto) {
+        return "fixed-student-courses";
+    }
+
+
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    public String createCourse(CourseDto courseDto) {
+        Course c = new Course();
+                c.setName(courseDto.getName());
+                c.setStatus(Status.ACTIVE);
+                c.setCreatedBy(courseDto.getCreatedBy());
+                c.setDescription(courseDto.getDescription());
+                c.setCreateDate(new Date());
+                courseRepository.save(c);
+        return "fixed-student-courses";
+    }
+
+
+}
