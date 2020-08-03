@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import taxila.dao.CourseRepository;
 import taxila.domain.Course;
 import taxila.domain.TekUser;
+import taxila.dtos.SubscriberDto;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
@@ -28,6 +29,7 @@ public class HomeController {
         TekUser u = (TekUser) httpSession.getAttribute(session_store_name);
             model.addAttribute("courses", courses);
             model.addAttribute("user",u);
+            model.addAttribute("subscribeDto",new SubscriberDto());
             return "home";
     }
 

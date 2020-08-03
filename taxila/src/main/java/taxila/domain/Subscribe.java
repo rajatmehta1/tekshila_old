@@ -6,21 +6,12 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Setter
-@Getter
-@Document(collection = "users")
-public class TekUser {
+@Document(collection = "subscribers")
+@Getter @Setter
+public class Subscribe {
 
     @Id
     private ObjectId _id;
 
-    private int userId;
-    private String name;
     private String email;
-    private String userName;
-    private String pwd;
-    private String description;
-    private String is_instructor;
-//    private String isTeacher;
-
 }

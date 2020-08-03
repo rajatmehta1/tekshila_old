@@ -5,22 +5,22 @@ import lombok.Setter;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import taxila.domain.enums.Status;
+
+import java.util.Date;
 
 @Setter
 @Getter
-@Document(collection = "users")
-public class TekUser {
-
+@Document(collection = "instructor")
+public class Instructor {
     @Id
     private ObjectId _id;
 
-    private int userId;
+    private long instructorId;
     private String name;
-    private String email;
-    private String userName;
-    private String pwd;
     private String description;
-    private String is_instructor;
-//    private String isTeacher;
+    private String category;
+    private Status status;
+    private Date createDate;
 
 }

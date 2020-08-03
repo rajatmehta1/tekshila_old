@@ -397,7 +397,7 @@
       <a class="dropdown-item" href="fluid-app-trello.html">Review Courses</a>
       <a class="dropdown-item" href="fluid-app-trello.html">Support Tickets</a>
       <a class="dropdown-item" href="fluid-app-trello.html">Reports</a>
-      <a class="dropdown-item" href="fluid-app-trello.html">Website Settings</a> 
+      <a class="dropdown-item" href="fluid-app-trello.html">Website Settings</a>
     </div>
   </li>
   -->
@@ -463,7 +463,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                Having over 12 years exp. Adrian is one of the lead UI designers in the industry Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, aut.
+                                <p th:text="${instructor.description}"></p>
                             </div>
                         </div>
 
@@ -474,9 +474,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta eius enim inventoreus optio ratione veritatis. Beatae deserunt illum ipsam magniima mollitia officiis quia tempora!</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta eius enim inventoreus optio ratione veritatis. Beatae deserunt illum ipsam magniima mollitia officiis quia tempora!</p>
+                                <p th:text="${course.description}"></p>
                             </div>
                         </div>
 
@@ -807,7 +805,7 @@
                 <div class="sidebar-block p-0">
                     <!--
 
-  
+
   <div class="sidebar-heading">Layouts</div>
   <ul class="sidebar-menu mt-0 mb-4">
 
@@ -1121,7 +1119,7 @@
                     <!--
   <div class="sidebar-heading">Administrator</div>
 
-  
+
   <ul class="sidebar-menu mt-0">
 
     <li class="sidebar-menu-item">
