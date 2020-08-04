@@ -28,6 +28,10 @@ public class Course implements Serializable {
 
     private String test;
     private String test2;
+    private String shortDesc;
+    private String percentComplete;
+    private String ratingCount;
+    private String rating;
 
 
 }
