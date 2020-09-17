@@ -1,12 +1,25 @@
 
 1. User Registration
 
+   * Integrate with Github login
+   * Store User after login from Github into the User table
+
 2. Login
 
+   * Auto login after registeration
+   * Change the screens header after login
+
 3. Browse Course - Static
+   * browser static courses
 
 4. Buy course - integrate with API
+   * Integrate with Stripe API
+   *
 
 5. View Course post login...
+   * Build Static Course
+   * Engineering Mgr Interview and System Design one
+   * Java Course
 
 6. Watch few chapters without login.
+   * Preview on few links (static links)

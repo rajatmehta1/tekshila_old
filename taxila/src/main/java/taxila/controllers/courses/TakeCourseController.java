@@ -14,4 +14,5 @@ public class TakeCourseController {
         return "/courses/preparing_for_system_design/design_mint";
     }
 
+
 }
