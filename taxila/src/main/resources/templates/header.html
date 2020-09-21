@@ -1,8 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
 <!-- Header Layout -->
 
     <!-- Header -->
 
-    <div id="header" class="mdk-header bg-dark js-mdk-header m-0" data-fixed th:fragment="hdr">
+    <div id="header" class="mdk-header bg-dark js-mdk-header m-0" data-fixed th:header="hdr">
         <div class="mdk-header__content">
 
             <div class="navbar navbar-expand-sm navbar-main navbar-dark bg-primary pr-0 pl-md-0 pr-0" id="navbar" data-primary>
@@ -224,7 +229,7 @@
                             <div class="dropdown-item d-flex align-items-center py-2 navbar-company-info py-3">
 
                                     <span class="mr-3">
-                                        <img src="assets/images/frontted-logo-blue.svg" width="43" height="43" alt="avatar">
+                                        <img src="../assets/images/frontted-logo-blue.svg" width="43" height="43" alt="avatar">
                                     </span>
                                 <span class="flex d-flex flex-column">
                                         <strong class="h5 m-0"><span th:text="${loggedInUser.name}"></span></strong>
@@ -294,3 +299,5 @@
     </div>
 
     <!-- // END Header -->
+</body>
+</html>

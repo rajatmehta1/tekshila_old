@@ -62,7 +62,7 @@
                 <i class="material-icons mr-3">check_circle</i>
                 <div class="text-body">An email with password reset instructions has been sent to your email address, if it exists on our system.</div>
             </div>
--->
+
             <a href="" class="btn btn-light btn-block">
                 <span class="mr-2">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="abcRioButtonSvg">
@@ -81,7 +81,7 @@
             <div class="page-separator">
                 <div class="page-separator__text">or</div>
             </div>
-
+-->
             <form action="#" th:action="@{/t/user/login}" th:object="${user}" method="post">
                 <input type="hidden" name="redirect_url" th:value="${redirect_url}" th:field="*{redirect_url}"/>
                 <div class="form-group">
