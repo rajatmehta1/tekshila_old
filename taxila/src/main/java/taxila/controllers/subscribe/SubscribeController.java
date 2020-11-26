@@ -35,7 +35,7 @@ public class SubscribeController {
         subscribeRepository.save(s);
 
         model.addAttribute("subscribed","YES");
-        model.addAttribute("subscribeDto",new SubscriberDto());
+        model.addAttribute("subscribeDto",s);
 
         return "home";
     }

@@ -9,6 +9,10 @@ spring:
       database: taxila
       port: 27017
       host: localhost
+  #Properties added to run templates without bouncing servers
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates/
 #  security:
 #    oauth2:
 #      client:

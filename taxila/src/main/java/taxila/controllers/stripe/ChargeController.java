@@ -51,7 +51,7 @@ public class ChargeController {
                         return "forward:/t/user/login";
                     }
 
-                    enrolledCourse.setUserId("" + tusr.getUserId());
+                    enrolledCourse.setUserIdentity("" + tusr.getUserId());
                     enrolledCourse.setStatus(CourseStatus.ENROLLED.toString());
                     enrolCourseRepository.save(enrolledCourse);
             return "course_detail";

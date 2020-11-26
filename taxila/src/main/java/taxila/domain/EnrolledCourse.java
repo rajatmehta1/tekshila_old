@@ -2,6 +2,8 @@ package taxila.domain;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
@@ -10,8 +12,11 @@ import java.io.Serializable;
 @Document(collection = "enrolled_courses")
 public class EnrolledCourse implements Serializable {
 
-    public String userId;
-    public String courseId;
-    public String status;
+    @Id
+    private ObjectId _id;
+
+    private String userIdentity;
+    private String courseId;
+    private String status;
 
 }
