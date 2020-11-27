@@ -13,6 +13,8 @@ spring:
   thymeleaf:
     cache: false
     prefix: file:src/main/resources/templates/
+  session:
+    store-type: mongodb
 #  security:
 #    oauth2:
 #      client:
