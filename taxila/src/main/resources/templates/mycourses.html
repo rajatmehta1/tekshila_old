@@ -111,12 +111,18 @@
                     </div>
                 </form>
                 -->
+                <script language="JavaScript">
+                    function gotoCourse(prm) {
+                        // alert(prm)
+                        window.location.href='/t/courses/view/' + prm
+                    }
+                </script>
                 <div class="row">
 
                     <div class="col-md-3" th:each="mycourse : ${mycourses}">
-                        <div class="card card__course">
+                        <div class="card card__course" th:onclick="'gotoCourse(' + ${mycourse.courseId} + ')'" style="cursor: pointer;">
                             <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
-                                <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" href="fluid-student-course.html">
+                                <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" th:onclick="'gotoCourse(' + ${mycourse.courseId} + ')'">
                                     <span><img src="/assets/images/logos/react.svg" class="mb-1" style="width:34px;" alt="logo"></span>
                                     <span class="course__title" th:text="${mycourse.name}"></span>
                                     <span class="course__subtitle" th:text="${mycourse.shortDesc}"></span>
@@ -125,21 +131,22 @@
                             <div class="p-3">
                                 <div class="mb-2">
                                     <span class="mr-2">
-                                        <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                        <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                        <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                        <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
-                                        <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star_half</i></a>
+                                        <span class="rating-link active"><i class="material-icons icon-16pt">star</i></span>
+                                        <span class="rating-link active"><i class="material-icons icon-16pt">star</i></span>
+                                        <span class="rating-link active"><i class="material-icons icon-16pt">star</i></span>
+                                        <span class="rating-link active"><i class="material-icons icon-16pt">star</i></span>
+                                        <span class="rating-link active"><i class="material-icons icon-16pt">star_half</i></span>
                                     </span>
                                     <strong th:text="${mycourse.rating}"></strong><br />
                                     <small class="text-muted">(<span th:text="${mycourse.ratingCount}"></span> ratings)</small>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <strong class="h4 m-0"><span th:text="${mycourse.percentComplete}"></span>% complete</strong>
-                                    <a th:href="@{/t/view/{id}(id=${mycourse.courseId})}" class="btn btn-primary ml-auto">Open</a>
+                                    <!--<a th:href="@{/t/view/{id}(id=${mycourse.courseId})}" class="btn btn-primary ml-auto">Open</a>-->
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <!-- double copy -->
