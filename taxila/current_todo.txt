@@ -1,0 +1,11 @@
+
+
+1. Provide enrollment to User
+
+   * User logs in
+   * User selects a course
+   * User pays through stripe
+   * User is enrolled in the course
+
+
+2. Next login user should be able to see the enrolled course
