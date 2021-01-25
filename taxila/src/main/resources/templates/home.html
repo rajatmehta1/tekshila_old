@@ -77,8 +77,47 @@
             </div>
 
             <h2 class="bold m-4 text-center p-4">Recent Courses</h2>
+
+            <script language="JavaScript">
+                function gotoCourse(courseIdentity) {
+                    alert('Course Identity ==> ' + courseIdentity)
+                    window.location.href='/t/' + '/courses/view/' + courseIdentity
+                }
+            </script>
+
             <div class="row">
 
+                <div class="col-md-3"  style="cursor: pointer;" th:each="course : ${courses}">
+                    <div class="card card__course" data-aos="fade-up" data-offset="-100" th:onclick="'gotoCourse(' + ${course.courseId} + ')'">
+                        <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                            <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" th:onclick="'gotoCourse(' + ${course.courseId} + ')'">
+                                <span><img src="/assets/icons/svg/design.svg" class="mb-1" style="width:34px;" alt="logo"></span>
+                                <span class="course__title" th:text="${course.name}"></span>
+                                <span class="course__subtitle" th:text="${course.shortDesc}"></span>
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <div class="mb-2">
+                                    <span class="mr-2">
+                                        <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
+                                        <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
+                                        <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
+                                        <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star</i></a>
+                                        <a href="#" class="rating-link active"><i class="material-icons icon-16pt">star_half</i></a>
+                                    </span>
+                                <strong>4.7</strong><br />
+                                <small class="text-muted">(391 ratings)</small>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <strong class="h4 m-0">Free</strong>
+                                <a href="#" class="btn btn-primary ml-auto"><i class="material-icons">add_shopping_cart</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+<!--
                 <div class="col-md-3" onclick="location.href='/t/courses/view/1';" style="cursor: pointer;">
                     <div class="card card__course" data-aos="fade-up" data-offset="-100">
                         <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
@@ -196,7 +235,7 @@
                 </div>
 
             </div>
-
+-->
             <div class="m-4 p-4">
                 <h2 class="bold mb-1 text-center">Features &amp; Highlights</h2>
                 <p class="lead text-muted text-center">What makes TEKSHILA an awesome companion for learning key skills.</p>
