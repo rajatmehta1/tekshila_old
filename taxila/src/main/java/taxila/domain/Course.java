@@ -32,6 +32,6 @@ public class Course implements Serializable {
     private String percentComplete;
     private String ratingCount;
     private String rating;
-
+    private int userIdentity;
 
 }

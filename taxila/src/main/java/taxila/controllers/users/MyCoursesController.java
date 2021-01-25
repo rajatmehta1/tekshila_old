@@ -48,14 +48,18 @@ public class MyCoursesController {
     private List<Course> findCourses(List<EnrolledCourse> enrolledCourses) {
         List<Course> courses = new ArrayList<>();
         for(EnrolledCourse ec : enrolledCourses) {
-            courses.add(courseRepository.findCourseByCourseIdEquals(Integer.parseInt(ec.getCourseId())));
+            Course course = courseRepository.findCourseByCourseIdEquals(Integer.parseInt(ec.getCourseId()));
+                   course.setUserIdentity(Integer.parseInt(ec.getUserIdentity()));
+                courses.add(course);
         }
         return courses;
     }
 
 
-    @RequestMapping(value = "/view/{courseId}", method = {RequestMethod.GET})
-    public String viewCourse(@PathVariable(name = "courseId") String courseId, Model model, HttpSession httpSession) {
+    @RequestMapping(value = "/{userId}/mycourses/view/{courseId}", method = {RequestMethod.GET})
+    public String viewCourse(@PathVariable(name = "userId") int userId,
+                             @PathVariable(name = "courseId") String courseId,
+                             Model model, HttpSession httpSession) {
 //        EnrolledCourse course = enrolCourseRepository.findEnrolledCourseByUserId()
         return "courses/preparing_for_system_design/design_mint";
     }
@@ -65,4 +69,6 @@ public class MyCoursesController {
 //        EnrolledCourse course = enrolCourseRepository.findEnrolledCourseByUserId()
         return "courses/preparing_for_system_design/design_mint";
     }
+
+
 }

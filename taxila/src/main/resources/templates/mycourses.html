@@ -112,15 +112,15 @@
                 </form>
                 -->
                 <script language="JavaScript">
-                    function gotoCourse(prm) {
-                        // alert(prm)
-                        window.location.href='/t/courses/view/' + prm
+                    function gotoCourse(userIdentity, courseIdentity) {
+                        alert('userIdentity ==> ' + userIdentity)
+                        window.location.href='/t/' + userIdentity + '/mycourses/view/' + courseIdentity
                     }
                 </script>
                 <div class="row">
 
                     <div class="col-md-3" th:each="mycourse : ${mycourses}">
-                        <div class="card card__course" th:onclick="'gotoCourse(' + ${mycourse.courseId} + ')'" style="cursor: pointer;">
+                        <div class="card card__course" th:onclick="'gotoCourse(' + ${mycourse.userIdentity} + ',' + ${mycourse.courseId} + ')'" style="cursor: pointer;">
                             <div class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
                                 <a class="card-header__title  justify-content-center align-self-center d-flex flex-column" th:onclick="'gotoCourse(' + ${mycourse.courseId} + ')'">
                                     <span><img src="/assets/images/logos/react.svg" class="mb-1" style="width:34px;" alt="logo"></span>
