@@ -13,7 +13,7 @@ public class UILoginController {
 
 //    LoginService
 
-    @GetMapping("/login")
+    @GetMapping("/login2")
     public String login(Model model) {
         return "login";
     }

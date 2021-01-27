@@ -53,24 +53,24 @@ public class UserController {
     }
 
 
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String login(Model model, User user, HttpSession httpSession) {
-        TekUser tuser = userRepository.findTekUserByEmailAndPwd(user.getEmail(), user.getPwd());
-        if(null != tuser) {
-            model.addAttribute("loggedInUser",tuser);
-                httpSession.setMaxInactiveInterval(sessionInactiveTime);
-                httpSession.setAttribute(session_store_name, tuser);
-
-                if(null != user.getRedirect_url() && !"".equalsIgnoreCase(user.getRedirect_url())) {
-                    return "forward:" + user.getRedirect_url();
-                }
-                return "forward:/t/" + tuser.getUserId() + "/mycourses";
-        }
-        else {
-            model.addAttribute("error","Invalid Credential. Please try again");
-            return "login";
-        }
-    }
+//    @RequestMapping(value = "/login", method = RequestMethod.POST)
+//    public String login(Model model, User user, HttpSession httpSession) {
+//        TekUser tuser = userRepository.findTekUserByEmailAndPwd(user.getEmail(), user.getPwd());
+//        if(null != tuser) {
+//            model.addAttribute("loggedInUser",tuser);
+//                httpSession.setMaxInactiveInterval(sessionInactiveTime);
+//                httpSession.setAttribute(session_store_name, tuser);
+//
+//                if(null != user.getRedirect_url() && !"".equalsIgnoreCase(user.getRedirect_url())) {
+//                    return "forward:" + user.getRedirect_url();
+//                }
+//                return "forward:/t/" + tuser.getUserId() + "/mycourses";
+//        }
+//        else {
+//            model.addAttribute("error","Invalid Credential. Please try again");
+//            return "login";
+//        }
+//    }
 
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
@@ -86,7 +86,7 @@ public class UserController {
         TekUser s = new TekUser();
             s.setEmail(user.getEmail());
             s.setName(user.getName());
-            s.setPwd(user.getPwd());
+            s.setPassword(user.getPwd());
 
             userRepository.save(s);
             countersRepository.save(cs);

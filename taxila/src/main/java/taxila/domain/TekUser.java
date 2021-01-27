@@ -19,8 +19,8 @@ public class TekUser implements Serializable {
     private int userId;
     private String name;
     private String email;
-    private String userName;
-    private String pwd;
+    private String username;
+    private String password;
     private String description;
     private String is_instructor;
 //    private String isTeacher;
