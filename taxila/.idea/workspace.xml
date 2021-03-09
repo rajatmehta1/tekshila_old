@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad1ff48a-6ace-4e11-8e0f-ffd37490121c" name="Default Changelist" comment="test this file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/taxila/config/SpringFoxConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/taxila/dao/CourseRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taxila/domain/TekUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taxila/domain/TekUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/256_daniel-gaffey-1060698-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/256_jeremy-banks-798787-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/256_joao-silas-636453-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/256_luke-porter-261779-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/256_michael-dam-258165-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/256_rsz_1andy-lee-642320-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/256_s-a-r-a-h-s-h-a-r-p-764291-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fixed-student-courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fixed-student-courses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taxila/domain/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taxila/domain/Course.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,69 +19,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="127" column="14" selection-start-line="127" selection-start-column="14" selection-end-line="127" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/taxila/domain/TekUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4928">
-              <caret line="233" column="20" lean-forward="true" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="81" column="72" selection-start-line="81" selection-start-column="65" selection-end-line="81" selection-end-column="72" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fixed-student-courses.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-              <folding>
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/taxila/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="720">
+              <caret line="32" column="50" selection-start-line="31" selection-start-column="56" selection-end-line="32" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,8 +33,82 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="360">
+              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/taxila/AppTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/taxila/dao/CourseRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/taxila/dao/CourseRepositoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/taxila/domain/Course.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.3.RELEASE/spring-beans-5.2.3.RELEASE.jar!/org/springframework/beans/factory/annotation/InjectionMetadata.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="90" column="13" lean-forward="true" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/courses/CourseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-744">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -114,9 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/home</find>
-      <find>subscribe</find>
-      <find>home</find>
       <find>&lt;form</find>
       <find>Courses</find>
       <find>Learn the</find>
@@ -141,9 +148,12 @@
       <find>cout</find>
       <find>LEMA</find>
       <find>frontted-logo-blue.svg</find>
-      <find>Student</find>
-      <find>courses</find>
       <find>Student C</find>
+      <find>Student</find>
+      <find>Preparat</find>
+      <find>courses</find>
+      <find>description</find>
+      <find>spring-boot-starter-data-mongodb</find>
     </findStrings>
     <dirStrings>
       <dir>C:\mystuff\tekshila_repo\taxila\src\main\java\taxila\controllers</dir>
@@ -157,44 +167,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/side_bar_menu.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/messages.html" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/domain/Instructor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/dao/InstructorRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/dao/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/courses/CourseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/domain/Subscribe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/dao/SubscribeRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/dtos/SubscriberDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/home/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/courses/preparing_for_system_design/design_mint.html" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/domain/Course.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/courses/TakeCourseController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/includes/tail.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/header.html" />
         <option value="$PROJECT_DIR$/day1.txt" />
         <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/enrolledcourses/EnrolledCourseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/users/MyCoursesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/taxila/dao/EnrolCourseRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/domain/EnrolledCourse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/stripe/ChargeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/subscribe/SubscribeController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/scripts.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/course_detail.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/sign-up.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/mycourses.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" />
         <option value="$PROJECT_DIR$/wireframes/test.txt" />
         <option value="$PROJECT_DIR$/wireframes/asdf.txt" />
         <option value="$PROJECT_DIR$/wireframes/abc.txt" />
         <option value="$PROJECT_DIR$/day2.txt" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/taxila/domain/TekUser.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fixed-student-courses.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/taxila/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/taxila.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/s3/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/courses/TakeCourseController.java" />
+        <option value="$PROJECT_DIR$/current_todo.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/courses/CourseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/domain/EnrolledCourse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/dtos/CourseDto.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/mycourses.html" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/users/MyCoursesController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/stripe/ChargeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/security/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/domain/TekUser.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/sign-up.html" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/services/UserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/users/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/domain/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/dao/RoleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/dao/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/authentication/AuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/controllers/UILoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/services/CustomizeAuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/config/SpringFoxConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/application.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/taxila/dao/CourseRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/taxila/domain/Course.java" />
       </list>
     </option>
   </component>
@@ -226,10 +249,9 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="204" />
-    <option name="y" value="12" />
-    <option name="width" value="1120" />
-    <option name="height" value="796" />
+    <option name="x" value="-7" />
+    <option name="width" value="1238" />
+    <option name="height" value="665" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -237,7 +259,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -269,13 +290,43 @@
               <item name="taxila" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taxila" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taxila" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taxila" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taxila" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taxila" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taxila" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="taxila" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taxila" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taxila" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="taxila" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,18 +335,26 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606485972173" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612991596767" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="taxila" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\mystuff\tekshila_repo\taxila\src\test\resources" />
+      <recent name="C:\mystuff\tekshila_repo\taxila\src\main\resources\static\s3" />
       <recent name="C:\mystuff\tekshila_repo\taxila\src\main\resources\templates" />
       <recent name="C:\mystuff\tekshila_repo\taxila\src\main\resources\templates\courses" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="taxila.services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\mystuff\tekshila_repo\taxila\src\main\resources\templates\fragments" />
@@ -313,7 +372,62 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CourseRepositoryTest.testFetchCourse">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="taxila" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseRepositoryTest.testAddCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taxila" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="taxila.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="taxila.dao" />
+      <option name="MAIN_CLASS_NAME" value="taxila.dao.CourseRepositoryTest" />
+      <option name="METHOD_NAME" value="testAddCourse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseRepositoryTest.testFetchCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taxila" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="taxila.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="taxila.dao" />
+      <option name="MAIN_CLASS_NAME" value="taxila.dao.CourseRepositoryTest" />
+      <option name="METHOD_NAME" value="testFetchCourse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseRepositoryTest.testSomething" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taxila" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="taxila.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="taxila.dao" />
+      <option name="MAIN_CLASS_NAME" value="taxila.dao.CourseRepositoryTest" />
+      <option name="METHOD_NAME" value="testSomething" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="taxila" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="taxila.App" />
@@ -321,6 +435,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CourseRepositoryTest.testFetchCourse" />
+        <item itemvalue="JUnit.CourseRepositoryTest.testAddCourse" />
+        <item itemvalue="JUnit.CourseRepositoryTest.testSomething" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -376,7 +498,23 @@
       <workItem from="1606367114379" duration="2996000" />
       <workItem from="1606378476929" duration="843000" />
       <workItem from="1606380909935" duration="1438000" />
-      <workItem from="1606406951401" duration="5461000" />
+      <workItem from="1606406951401" duration="5464000" />
+      <workItem from="1608588738591" duration="4362000" />
+      <workItem from="1609130564070" duration="252000" />
+      <workItem from="1609395261223" duration="45000" />
+      <workItem from="1610495172599" duration="1306000" />
+      <workItem from="1610744330690" duration="864000" />
+      <workItem from="1611171418592" duration="925000" />
+      <workItem from="1611240845505" duration="18707000" />
+      <workItem from="1611323070054" duration="2055000" />
+      <workItem from="1611544366717" duration="821000" />
+      <workItem from="1611576417737" duration="19840000" />
+      <workItem from="1611680928837" duration="5916000" />
+      <workItem from="1611694997646" duration="16000" />
+      <workItem from="1611700702277" duration="7026000" />
+      <workItem from="1611844509397" duration="58000" />
+      <workItem from="1612904683807" duration="5469000" />
+      <workItem from="1612983689357" duration="5744000" />
     </task>
     <task id="LOCAL-00001" summary="Commiting footer...">
       <created>1600713057107</created>
@@ -423,10 +561,33 @@
     <option name="localTasksCounter" value="7" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118846000" />
+  <component name="TestHistory">
+    <history-entry file="CourseRepositoryTest_testSomething - 2021.02.10 at 14h 14m 28s.xml">
+      <configuration name="CourseRepositoryTest.testSomething" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseRepositoryTest_testAddCourse - 2021.02.10 at 14h 25m 25s.xml">
+      <configuration name="CourseRepositoryTest.testAddCourse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseRepositoryTest_testAddCourse - 2021.02.10 at 14h 49m 12s.xml">
+      <configuration name="CourseRepositoryTest.testAddCourse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseRepositoryTest_testAddCourse - 2021.02.10 at 14h 51m 05s.xml">
+      <configuration name="CourseRepositoryTest.testAddCourse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseRepositoryTest_testFetchCourse - 2021.02.10 at 15h 06m 59s.xml">
+      <configuration name="CourseRepositoryTest.testFetchCourse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseRepositoryTest_testFetchCourse - 2021.02.10 at 15h 07m 44s.xml">
+      <configuration name="CourseRepositoryTest.testFetchCourse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseRepositoryTest_testFetchCourse - 2021.02.10 at 15h 09m 11s.xml">
+      <configuration name="CourseRepositoryTest.testFetchCourse" configurationId="JUnit" />
+    </history-entry>
   </component>
-  <component name="TodoView">
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="192255000" />
+  </component>
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -437,8 +598,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16272825" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28893661" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -447,14 +609,14 @@
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.74136007" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32887402" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.3979933" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.93534005" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.33110368" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32998884" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32998884" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991204" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32887402" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32998884" />
@@ -463,7 +625,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.22395274" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.14178303" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -471,7 +633,7 @@
       <window_info anchor="right" id="Bean Validation" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20472974" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2803437" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -480,12 +642,12 @@
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.94281524" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.3979933" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.93534005" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32887402" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32998884" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32998884" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991204" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -496,7 +658,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.28175676" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.14178303" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -562,161 +724,162 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/taxila/controllers/subscribe/SubscribeController.java</url>
-          <line>32</line>
+          <url>file://$PROJECT_DIR$/src/main/java/taxila/services/UserService.java</url>
+          <line>29</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/taxila/controllers/users/MyCoursesController.java</url>
-          <line>39</line>
+          <url>file://$PROJECT_DIR$/src/main/java/taxila/services/CustomizeAuthenticationSuccessHandler.java</url>
+          <line>26</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/domain/Counters.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="5126">
+          <caret line="233" column="20" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/stripe/ChargeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/UILoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/users/MyCoursesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/checkout.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/dao/CountersRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/taxila/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15818">
+          <caret line="719" column="12" selection-start-line="719" selection-start-column="12" selection-end-line="719" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#span#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#23671#23677#0" expanded="true" />
+            <element signature="e#23677#23683#0" expanded="true" />
+            <element signature="e#23683#23689#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#36337#36342#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fixed-student-courses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/s3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/taxila.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8558">
+          <caret line="389" column="64" selection-start-line="389" selection-start-column="64" selection-end-line="389" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#span#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/courses/TakeCourseController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/domain/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/dao/CourseRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/courses/CourseController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/CourseControllerRest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+        <state relative-caret-position="286">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/dao/UserRepository.java">
+    <entry file="file://$PROJECT_DIR$/day1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/current_todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.30/tomcat-embed-core-9.0.30.jar!/org/apache/catalina/core/ApplicationDispatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="170" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/dtos/CourseDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/domain/EnrolledCourse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/SocialApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/mycourses.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/users/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+        <state relative-caret-position="224">
+          <caret line="124" column="178" lean-forward="true" selection-start-line="124" selection-start-column="123" selection-end-line="124" selection-end-column="178" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/dao/EnrolCourseRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/subscribe/SubscribeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-9">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/dtos/SubscriberDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/home/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="31" column="63" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/scripts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wireframes/test.txt" />
-    <entry file="file://$PROJECT_DIR$/wireframes/asdf.txt" />
-    <entry file="file://$PROJECT_DIR$/wireframes/abc.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/course_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32032">
-          <caret line="1456" column="63" selection-start-line="1456" selection-start-column="63" selection-end-line="1456" selection-end-column="63" />
+        <state relative-caret-position="-22">
+          <caret line="465" column="56" selection-start-line="465" selection-start-column="46" selection-end-line="465" selection-end-column="56" />
           <folding>
             <element signature="e#30204#30209#0" expanded="true" />
             <element signature="e#30609#30614#0" expanded="true" />
@@ -731,150 +894,262 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fixed-student-course.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/sign-up.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/stripe/ChargeRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2860">
-          <caret line="130" column="63" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
+        <state relative-caret-position="-9">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/result.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/mycourses.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/users/MyCoursesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15158">
-          <caret line="689" column="8" selection-start-line="689" selection-start-column="8" selection-end-line="689" selection-end-column="8" />
+        <state relative-caret-position="-9">
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day2.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/stripe/ChargeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="-9">
+          <caret line="56" column="30" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/domain/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/account-add-photo.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/digital-product.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/facebook_icon.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/frontted-logo-blue.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/frontted-logo-white.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/gulp.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/github.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/home_banner.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/nodejs.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/preview_1.0.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/vuejs.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/256_jeremy-banks-798787-unsplash.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/256_joao-silas-636453-unsplash.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/256_michael-dam-258165-unsplash.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/256_s-a-r-a-h-s-h-a-r-p-764291-unsplash.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="127" column="14" selection-start-line="127" selection-start-column="14" selection-end-line="127" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/domain/TekUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4928">
-          <caret line="233" column="20" lean-forward="true" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
+        <state relative-caret-position="72">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="81" column="72" selection-start-line="81" selection-start-column="65" selection-end-line="81" selection-end-column="72" />
+        <state relative-caret-position="2232">
+          <caret line="93" column="87" selection-start-line="93" selection-start-column="87" selection-end-line="93" selection-end-column="87" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fixed-student-courses.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/sign-up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="2400">
+          <caret line="100" column="22" selection-start-line="99" selection-start-column="26" selection-end-line="100" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/domain/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
           <folding>
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/dao/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/context/annotation/Role.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/domain/TekUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/dao/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="15" column="73" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="65" selection-start-line="65" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2964#2965#0" expanded="true" />
+            <element signature="e#3014#3015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/home/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/users/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/UILoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="36" column="89" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/SocialApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="69" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/services/CustomizeAuthenticationSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/authentication/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/config/SpringFoxConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/taxila/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/controllers/courses/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-744">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/taxila/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="720">
+          <caret line="32" column="50" selection-start-line="31" selection-start-column="56" selection-end-line="32" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.3.RELEASE/spring-beans-5.2.3.RELEASE.jar!/org/springframework/beans/factory/annotation/InjectionMetadata.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="90" column="13" lean-forward="true" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/dao/CourseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/taxila/dao/CourseRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/taxila/domain/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
