@@ -9,3 +9,6 @@
 
 
 2. Next login user should be able to see the enrolled course
+
+
+3. Build one course and push to it.
